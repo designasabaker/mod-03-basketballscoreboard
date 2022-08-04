@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="eachScoreBoard">
+                <h3 class="eachTitle">HOME</h3>
+                <h3 class="numBoard" id="homeScore">0</h3>
+                <div>
+                    <button class="btn" id="home+1" onclick="homeAddScore(1)">+1</button>
+                    <button class="btn" id="home+2" onclick="homeAddScore(2)">+2</button>
+                    <button class="btn" id="home+3" onclick="homeAddScore(3)">+3</button>
+                </div>
+            </div>
+            <div class="eachScoreBoard">
+                <h3 class="eachTitle">GUEST</h3>
+                <h3 class="numBoard" id="guestScore">0</h3>
+                <div>
+                    <button class="btn" id="guest+1" onclick="guestAddScore(1)">+1</button>
+                    <button class="btn" id="guest+2" onclick="guestAddScore(2)">+2</button>
+                    <button class="btn" id="guest+3" onclick="guestAddScore(3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn" id="refreshBtn" style="display:block; margin:30px auto;" onclick="refreshGame()">⟳</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html> 
